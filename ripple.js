@@ -1,14 +1,14 @@
 su={
-	"init":function(){
+	init:function(){
 		Array.from(document.querySelectorAll(".su-ripple")).forEach(su.initRippleEffect);
-	},"initRippleEffect":function(elem){
+	},initRippleEffect:function(elem){
 		elem.onmousedown=function(){su.startRipple(this,event.offsetY,event.offsetX)}
 		elem.ontouchstart=function(){su.startRipple(this,event.touches[0].pageY-this.offsetTop,event.touches[0].pageX-this.offsetLeft)}
 		elem.onmouseup=function(){su.stopRipple(this)}
 		elem.onmouseout=function(){su.stopRipple(this)}
 		elem.ontouchend=function(){su.stopRipple(this)}
 		elem.ontouchmove=function(){su.stopRipple(this)}
-	},"startRipple":function(elem,offy,offx){
+	},startRipple:function(elem,offy,offx){
 		rippleElem=document.createElement("div");
 		rippleElem.classList.add("su-rippleEffect");
 		rippleIdName="simui-ripple-"+Date.parse(new Date());
@@ -22,7 +22,7 @@ su={
 			document.getElementById(rippleIdName).style.transform="scale("+rippleSizeCount+")"
 		},50)
 		setTimeout(function(){document.getElementById(rippleIdName).style.opacity="1"},10)
-	},"stopRipple":function(elem){
+	},stopRipple:function(elem){
 		if(window.rippleAnimInterval){clearInterval(rippleAnimInterval);}
 		if(window.rippleIdName&&document.getElementById(rippleIdName)){document.getElementById(rippleIdName).classList.add("fadeOut");}
 	}
