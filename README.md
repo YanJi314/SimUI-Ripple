@@ -1,5 +1,6 @@
 # SimUI-Ripple
-氢软首页的 Material Design 风格涟漪特效实现思路
+- 氢软首页的 Material Design 风格涟漪特效实现思路
+- 此项目相较 waves 等项目较为轻量级，没写兼容代码，对老浏览器的兼容可能有问题
 
 # Demo
 https://ui.simsoft.top/pages/ripple-demo
