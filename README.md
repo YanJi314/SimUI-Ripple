@@ -3,7 +3,7 @@
 - 此项目相较 waves 等项目较为轻量级，没写兼容代码，对老浏览器的兼容可能有问题
 
 # Demo
-https://ui.simsoft.top/pages/ripple-demo
+https://ui.simsoft.top/pages/ripple-demo.html
 
 # 用法
 - 引入 `ripple.css` 与 `ripple.js` 文件；
